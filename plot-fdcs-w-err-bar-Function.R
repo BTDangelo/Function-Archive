@@ -2,6 +2,8 @@
 
 ## BTD - Function to create flow duration curve with error bars
 
+## define these parameters: chr.dir.main, chr.dir.flow.data, chr.dir.figures, chr.eb
+
 flow.d.c <- function(chr.dir.main, chr.dir.flow.data, chr.dir.figures, chr.eb) {
   
   
