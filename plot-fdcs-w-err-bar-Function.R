@@ -3,7 +3,11 @@
 ## BTD - Function to create flow duration curve with error bars
 
 flow.d.c <- function(chr.dir.main, chr.dir.flow.data, chr.dir.figures, chr.eb) {
-  
+
+                                              ## chr.dir.main - path to main workspace
+                                              ## chr.dir.flow.data - path to flow data 
+                                              ## chr.dir.figures - path to write the figures  
+                                              ## chr.eb - path to error bar data 
   
   library(ggplot2)
   library(scales)                             ## BTD - Generic plot scaling nethods
