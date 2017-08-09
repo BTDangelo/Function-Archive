@@ -7,7 +7,3 @@ flow.exceed <- function(v.flow) {
   tmp.exceed <- 100 * (1 - tmp.exceed)
   return(tmp.exceed)
 }
-
-
-## calculate the flow exceedance for the flow data
-df.data.flow$flow.exceed <- flow.exceed(df.data.flow$value)

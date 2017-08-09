@@ -13,17 +13,3 @@ fancy_scientific <- function(l) {
   # return this as an expression
   parse(text=z)
 }
-
-
-## add the fdc to the plot and set how the axes will appear
-p1 <- ggplot(data = df.data.flow) +
-  geom_line(aes(x = flow.exceed, y = value),
-            color = "blue", size = 1.5) +
-  scale_y_log10(limits = range(tmp.breaks), breaks = tmp.breaks,
-                minor_breaks = c(sapply(tmp.breaks, function(x) seq(0, x, x/10))),
-                labels = fancy_scientific) +
-  scale_x_continuous(limits = c(0, 100), expand = c(0,0)) +
-  labs(
-    x = "Flow Exceedance (%)",
-    y = "Average Daily Flow (cfs)"
-  )
